@@ -2,6 +2,6 @@
 
 # Read Me
 
-This resume is written in LaTeX and uses the moderncv package for formatting.
+This resume is written in LaTeX and uses the CTAN moderncv package for formatting.
 
 <3
