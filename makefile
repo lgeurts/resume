@@ -1,4 +1,4 @@
-#TODO: I'd like to add multiple versions of my resume as different build targets.
+# TODO: I'd like to add multiple versions of my resume as different build targets.
 # print: black and white, fully qualified urls
 # digital: color? hyperlink'ed urls
 BUILD_DIR=build
