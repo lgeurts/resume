@@ -1,4 +1,4 @@
-%% start of file `template.tex'.
+%% Start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %% Modified 2017 Luc Geurts (lgeurts@protonmail.com).
 %
@@ -7,31 +7,32 @@
 \documentclass[11pt,a4paper,sans]{moderncv}          % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                      % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                       % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\renewcommand{\familydefault}{\sfdefault}   % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                           % to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{casual}           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}            % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}  % to set the default font; use '\sfdefault' for sans serif, '\rmdefault' for the default roman one, or any other tex font name
+%\nopagenumbers{}                          % to suppress automatic page numbering for CVs which are longer than one page
 
 % character encoding
-\usepackage[utf8]{inputenc}                 % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                       % if you need to use CJK to typeset theresume in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}                % if you are not using xelatex or lualatex, replace this by your own encoding
+%\usepackage{CJKutf8}                      % if you need to use CJK to typeset theresume in Chinese, Japanese or Korean
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                  % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}             % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}             % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks; be careful, the length is normally calculated to avoid an overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Luc}{Geurts}
-\title{Team Lead, Cloud Platforms Engineer}                     % optional, remove / comment the line if not wanted
-\address{}{45000 Orléans}{Centre-Val de Loire, France}          % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-%\phone[mobile]{+1~(234)~567~890}                               % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                                % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                                  % optional, remove / comment the line if not wanted
-\email{lgeurts@protonmail.com}                                  % optional, remove / comment the line if not wanted
-\homepage{www.linkedin.com/in/lucgeurts}                        % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                             % optional, remove / comment the line if not wanted
-\photo[74pt][0.2pt]{picture}                                    % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be re-sized to, 0.4pt is the thickness of the frame around it (put this to 0pt for no frame) and 'picture' is the name of the picture file
+\title{Team Lead, Cloud Platforms Engineer}                    
+\address{}{45000 Orléans}{Centre-Val de Loire, France}          
+%\phone[mobile]{+1~(234)~567~890}                                    % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                                     % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                                       % optional, remove / comment the line if not wanted
+\email{lgeurts@protonmail.com}                                  
+\homepage{www.linkedin.com/in/lucgeurts}                        
+%\extrainfo{additional information}                                  % optional, remove / comment the line if not wanted
+\photo[74pt][0.2pt]{picture}                                   
+% '64pt' is the height the picture must be re-sized to, 0.4pt is the thickness of the frame around it (set to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{can-do mindset, platforms, cloud, coding night owl}          % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -47,7 +48,7 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%\begin{CJK*}{UTF8}{gbsn}                                            % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
@@ -59,11 +60,6 @@
 \cventry{1987--1989}{Electromechanical Engineer}{Belgian Armed Forces}{}{Belgium}{}{}
 \cventry{1983--1987}{Docent Drums, Percussion Instruments}{Genkse Academie voor Kunst}{}{Belgium}{}{}
 %\cventry{1979--1983}{Garden Architect}{Biotechnicum Bocholt}{}{Belgium}{}{}
-
-%\section{Foreign Languages}
-%\cvitemwithcomment{English/Flemish}{}{Native or bilingual proficiency}
-%\cvitemwithcomment{French/German}{}{Professional working proficiency}
-%\cvitemwithcomment{Irish Gaelic}{}{Limited working proficiency}
 
 \section{Experience}
 \cventry{2017--Present}{DevOps, Cloud Platforms Engineer}{}{France}{}{\newline{}%
@@ -102,9 +98,9 @@ The bullet point description of my job?%
 \cvitem{}{Microsoft Azure Compute: Infrastructure as a Service (IaaS) Overview Workshop}{}
 \cvitem{}{Vital Signs: Performance Monitoring Windows Server Workshop}{}
 
-\section{Courses}
+\section{Recent Courses}
 \cvdoubleitem{}{Exam 70-660 - Windows Internals for EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}{Workshop: Mandel: Presentation Skills for Technical Professionals}
-\cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Accelerated Windows Memory Dump Analysis}
+\cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Accelerated Windows Memory Dump Analysis Certification}
 
 \section{Projects}
 \cvitem{2016}{Microsoft Garage Hackathon: Bing my ASL (C++, Java, UI \& Web design)}{}
@@ -112,6 +108,12 @@ The bullet point description of my job?%
 \section{Publications}
 \cvitem{2014}{Kernel Debugging for Premier Field Engineers Workshop, Microsoft Premier Support, Germany}{}
 \cvitem{2013}{CSS Data Gathering Workshop, Microsoft Learning, USA}{}
+
+\section{Foreign Languages}
+\cvitem{Flemish}{Native proficiency}{}
+\cvitem{English}{CEFR C2: 20+ years experience working with English-speaking clients}{}
+\cvitem{French}{DELF B2: 4 years at high school in Belgium, 1 year CIEP in France}{}
+\cvitem{German}{CEFR B2: Expat living for 5 years in Germany}{}
 
 \section{Volunteering Experience}
 \cvitem{2011--2017}{Animal Rescue Service, Dublin SPCA, Republic of Ireland}{}
@@ -142,4 +144,4 @@ The bullet point description of my job?%
 
 \end{document}
 
-%% end of file `template.tex'.
+%% End of file `template.tex'.
