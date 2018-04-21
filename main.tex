@@ -4,26 +4,26 @@
 %
 %% This work may be distributed and/or modified under the conditions of the LaTeX Project Public License version %% 1.3c, available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}                 % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}                  % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{casual}              % options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black}               % options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', 'black'
-\renewcommand{\familydefault}{\sfdefault}   % to set the default font; use '\sfdefault' for sans serif, '\rmdefault' for the default roman one, or any other tex font name
-%\nopagenumbers{}                           % to suppress automatic page numbering for CVs which are longer than one page
+\renewcommand{\familydefault}{\sfdefault}     % to set the default font; use '\sfdefault' for sans serif, '\rmdefault' for the default roman one, or any other tex font name
+%\nopagenumbers{}                              % to suppress automatic page numbering for CVs which are longer than one page
 
 % character encoding
-\usepackage[utf8]{inputenc}                     % if you are not using xelatex or lualatex, replace this by your own encoding
-%\usepackage{CJKutf8}                           % if you need to use CJK to typeset in Chinese, Japanese or Korean
+\usepackage[utf8]{inputenc}                          % if you are not using xelatex/lualatex, replace this by your own encoding
+%\usepackage{CJKutf8}                                % to use CJK for typesetting in Chinese, Japanese or Korean
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                  % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}             % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks; be careful, the length is normally calculated to avoid an overlap with your personal info; use this at your own typographical risks...
+%\setlength{\hintscolumnwidth}{3cm}                  % if you want to change the column width with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid any line breaks; be careful.., the length is normally calculated to avoid an overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Luc}{Geurts}
-\title{Helping customers with their journey to the cloud!}                    
+\title{problem solver, suffers from chronic curiosity syndrome}                   
 \address{}{45000 Orléans}{Centre-Val de Loire, France}          
 %\phone[mobile]{+1~(234)~567~890}                                % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                                 % optional, remove / comment the line if not wanted
@@ -48,7 +48,7 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                                            % to typeset your resume in Chinese using CJK
+%\begin{CJK*}{UTF8}{gbsn}                                        % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
@@ -58,8 +58,8 @@
 
 %\section{Education}
 %\cventry{1987--1989}{Electromechanical Engineer}{Belgian Armed Forces}{}{Belgium}{}{}
-%\cventry{1983--1987}{Bachelor of Music}{Genkse Academie voor Kunst}{}{Belgium}{}{}
-%\cventry{1979--1983}{Bachelor Biotechnical Sciences}{Biotechnicum Bocholt}{}{Belgium}{}{}
+%\cventry{1983--1987}{Bachelor of Arts - BA Music}{Genkse Academie voor Kunst}{}{Belgium}{}{}
+%\cventry{1979--1983}{Bachelor of Science - BS, Biotechnology}{Biotechnicum Bocholt}{}{Belgium}{}{}
 
 \section{Experience}
 \cventry{2017--Present}{Team Lead, Cloud Platforms Engineer}{}{France}{}{\newline{}%
@@ -78,34 +78,30 @@ The bullet point description of my job?%
 \item Participate in on-call shifts and CritSits;
 \item Mentor new hires; helping them adjust and discover more about our organization and its culture as well as enhancing their technical expertise.
 \end{itemize}}
-\cventry{2011--2012}{Escalation Engineer}{Dell}{Republic of Ireland}{}{\newline{}%
+\cventry{2011--2012}{Escalation Engineer}{Dell}{Ireland}{}{\newline{}%
 \begin{itemize}%
-\item Managed Tier 3 escalations and subcases, addressing and resolving break-fix incidents;
-\item Delivered high quality fixes for Dell KACE, vRanger and Foglight end-to-end software.
+\item Managing Tier 3 escalations and subcases; addressing and resolving break-fix incidents for KACE, vRanger and Foglight end-to-end software.
 \end{itemize}}
-\cventry{2011--2011}{Support Escalation Engineer}{Hewlett-Packard}{Republic of Ireland}{}{\newline{}%
+\cventry{2011--2011}{Support Escalation Engineer}{Hewlett-Packard for Microsoft PSS}{Ireland}{}{\newline{}%
 \begin{itemize}%
-\item Tracked product support cases;
-\item Wrote technical articles and white papers on multiple products for the external VKB; focusing on symptoms, root causes, and resolutions;
-\item Engaged in Early Assist in order to maintain key product knowledge.
+\item PSS provides pay-per-incident support for experts and businesses. More often than not, many of these support cases with their symptoms, root causes and resolutions, will land as a white paper in the external VKB (Microsoft partners) or TechNet. I did the symptom, root cause, resolution part.
 \end{itemize}}
 \cventry{2006--2010}{Owner, CEO}{GEURTS-IT B.V.}{Netherlands}{}{\newline{}%
 \begin{itemize}%
-\item Managed a pool of 12 FTEs;
-\item Worked as a contractor at various projects (for details, see my LinkedIn profile).
+\item How to become a true 'Jack Of All Trades'? Try 12 FTEs, now add some advertising, marketing plans, allocating resources, maintaining your precious business accounts, complying with federal/state laws, and providing customer service while simultaneously working full-time at various projects.
 \end{itemize}}
 
 \section{Technical Skills}
 \begin{cvcolumns}
-  \cvcolumn{}{\begin{itemize}\item Windows, Azure\item Python\item PowerShell\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item JavaScript\item Xperf\item WinDbg\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Linux\item Solaris\item Scripting (bash)\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Git/Subversion\item HTML5, CSS\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Azure, Windows\item AD\item Python\item PowerShell\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Hyper-V\item JavaScript\item Xperf\item WinDbg\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Failover Cluster\item Linux\item Solaris\item Scripting (bash)\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Git/Subversion\item HTML5, CSS\item MD\end{itemize}}
 \end{cvcolumns}
 
 \section{Courses}
-\cvdoubleitem{}{Exam 70-660 - Windows Internals for EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}{Workshop: Mandel: Presentation Skills for Technical Professionals}
-\cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Accelerated Windows Memory Dump Analysis Certification}
+\cvdoubleitem{}{70-660 Exam: Windows Internals for EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}{Workshop: Mandel: Presentation Skills for Technical Professionals}
+\cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Accelerated Windows Memory Dump Analysis}
 
 \section{Accreditations}
 \cvitem{2015}{Microsoft Azure Compute: Infrastructure as a Service (IaaS) Overview Workshop}{}
@@ -126,8 +122,8 @@ The bullet point description of my job?%
 
 \section{Volunteering Experience}
 \cvitem{2017--Present}{Freelance IT Consultant, Fondation Agir Contre l'Exclusion, France}{}
-\cvitem{2011--2017}{Animal Rescue Service, Dublin SPCA, Republic of Ireland}{}
-\cvitem{2011--2011}{Canine Carer, Dogs Trust, Republic of Ireland}{}
+\cvitem{2011--2017}{Animal Rescue Service, Dublin SPCA, Ireland}{}
+\cvitem{2011--2011}{Canine Carer, Dogs Trust, Ireland}{}
 
 %\section{References}
 %\begin{cvcolumns}
