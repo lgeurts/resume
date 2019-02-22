@@ -1,45 +1,44 @@
 %% Start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%% Modified 2018 Luc Geurts (lgeurts@protonmail.com).
+%% Modified 2018 Luc Geurts aka /Luge (lgeurts@protonmail.com).
 %
 %% This work may be distributed and/or modified under the conditions of the LaTeX Project Public License version %% 1.3c, available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper,sans]{moderncv}                  % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}    % possible options include the font size (10pt, 11pt and 12pt), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and the font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}              % options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}               % options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', 'black'
-\renewcommand{\familydefault}{\sfdefault}     % to set the default font; use '\sfdefault' for sans serif, '\rmdefault' for the default roman one, or any other tex font name
-%\nopagenumbers{}                              % to suppress automatic page numbering for CVs which are longer than one page
+\moderncvstyle{casual}              % options are 'casual', 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}               % options 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\renewcommand{\familydefault}{\sfdefault}            % to set the default font(s); use '\sfdefault' for sans serif, '\rmdefault' for the default roman one, or any other tex font name
+%\nopagenumbers{}                   % suppress automatic page numbering for CV which is longer than one page
 
 % character encoding
 \usepackage[utf8]{inputenc}                          % if you are not using xelatex/lualatex, replace this by your own encoding
-%\usepackage{CJKutf8}                                % to use CJK for typesetting in Chinese, Japanese or Korean
+%\usepackage{CJKutf8}                                % to use CJK for typesetting in 'Chinese', 'Japanese' or 'Korean'
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                  % if you want to change the column width with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid any line breaks; be careful.., the length is normally calculated to avoid an overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}             % for the 'classic' style, if you want to force the width allocated to your name and avoid any line breaks; be careful.., the length is normally calculated to avoid an overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Luc}{Geurts}
 \title{problem solver ... chronic curiosity syndrome}                   
 \address{}{45000 Orléans}{Centre-Val de Loire, France}          
-%\phone[mobile]{+1~(234)~567~890}                                % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                                 % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                                   % optional, remove / comment the line if not wanted
+%\phone[mobile]{+49~(151)~44063413}                 % optional, remove / comment the line if not wanted
+%\phone[fixed]{+1~(234~567~890}                     % optional, remove / comment the line if not wanted
 \email{lgeurts@protonmail.com}                                  
 \homepage{www.linkedin.com/in/lucgeurts}                        
-%\extrainfo{additional information}                              % optional, remove / comment the line if not wanted
+%\extrainfo{visit my blog at lgeurts.github.io}     % optional, remove / comment the line if not wanted
 \photo[74pt][0.2pt]{picture}                                   
-% '64pt' is the height the picture must be re-sized to, 0.4pt is the thickness of the frame around it (set it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{15 years hands-on and 4+ years of leadership experience.} % optional, remove / comment the line if not wanted
+% '64pt' is the height the picture must be re-sized to, '0.4pt' is the thickness of the frame (set to '0pt' for no frame) and 'picture' is the name of the picture file
+%\quote{Somewhere, something incredible is waiting to be known.}
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+% to show numerical labels in the bibliography (default is show no labels)
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]} % CONSIDER REPLACING THE ABOVE BY THIS
 
 % bibliography with multiple entries
 %\usepackage{multibib}
@@ -56,19 +55,19 @@
 %\cvitem{Name}{Luc H.A.M. Geurts}
 %\cvitem{Place of Birth}{Bree, Belgium}
 
-%\section{Education}
-%\cventry{1987--1989}{3 Para - Technician, Electromechanics}{Belgian Armed Forces}{}{Belgium}{}{}
-%\cventry{1983--1987}{Bachelor of Arts - BA, Music}{Genkse Academie voor Kunst}{}{Belgium}{}{}
-%\cventry{1980--1983}{Associate Diploma, Biotechnology}{Biotechnicum Bocholt}{}{Belgium}{}{}
+\section{Education}
+\cventry{1987--1989}{3 Para - Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
+\cventry{1983--1987}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
+\cventry{1979--1983}{Associate Degree, Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
 
 \section{Experience}
 \cventry{2017--Present}{Team Lead, Cloud Platforms Engineer}{}{France}{}{\newline{}%
 \begin{itemize}%
-\item Freelance contractor at a medium sized travel company. I am helping them build/scale a functional service (Websites, APIs, mobile apps), migrate to AWS (finished end 10/17), implement software provisioning, and recruit a new team of engineers;
-\item Manage the migration of financial applications at LCL (finished 06/18);
-\item Design and automate the deployment of a new Azure environment for testing purposes;
-\item Maintain a mixed Windows/Linux environment at a school for at-risk middle/high school children;
-\item Coach \& Tech Advisor for two early stage startups.
+\item Freelance contractor at a medium sized travel company. I am helping them build/scale a functional service (Websites, APIs, mobile apps), migrate to AWS (Amazon VPC), implement software provisioning, and recruit a new team of engineers;
+\item Manage the migration of a financial apps cluster at Le Crédit Lyonnais (finished 06/18); 
+\item Maintain a mixed Windows/Linux environment at a school for at-risk middle/high school children (FACE aka Fondation Agir Contre L'Exclusion);
+\item Coach \& Tech Advisor for two early stage startups;
+\item Recently became interested in AI; obtaining online certs from the Microsoft Professional program.
 \end{itemize}}
 \cventry{2012--2017}{Premier Field Engineer}{Microsoft Corporation}{Germany}{}{\newline{}%
 The bullet point description of my job?%
@@ -76,43 +75,39 @@ The bullet point description of my job?%
 \item Assist MCS (Microsoft Consulting Services) by providing technical support in developing 'Tailored to Fit' solutions for Premier customers;
 \item Create/teach different types of offerings such as Workshops, Chalk \& Talks;
 \item Deliver proactive on-site Windows Platforms DSE services in the DACH region (70\%);
-\item Participate in on-call shifts and CritSits (transactional, Europe, 30\%);
+\item Participate in on-call shifts, CritSits, and Health Checks (transactional, Europe, 30\%);
 \item Mentor new hires; helping them adjust and discover more about our organization and its culture, as well as enhancing their technical expertise.
 \end{itemize}}
 \cventry{2011--2012}{Escalation Engineer}{Dell}{Ireland}{}{\newline{}%
 \begin{itemize}%
-\item Managing Tier 3 escalations and subcases; addressing and resolving break-fix incidents for KACE appliances, vRanger and Foglight end-to-end software.
+\item Managing Tier 3 escalations and subcases; addressing and resolving break-fix incidents for KACE, vRanger and Foglight end-to-end software.
 \end{itemize}}
 \cventry{2011--2011}{Support Escalation Engineer}{Hewlett-Packard for Microsoft PSS}{Ireland}{}{\newline{}%
 \begin{itemize}%
-\item PSS provides pay-per-incident support for experts and businesses. More often than not, many of these support cases with their symptoms, root causes and resolutions, will land as a white paper in the external VKB (Microsoft partners) or TechNet. I did the symptom, root cause, resolution part.
-\end{itemize}}
-\cventry{2006--2010}{Owner, CEO}{GEURTS-IT B.V.}{Netherlands}{}{\newline{}%
-\begin{itemize}%
-\item How to become a true 'Jack Of All Trades'? Try mixing 12 FTEs with advertising, marketing plans, allocating resources, maintaining your precious business accounts, complying with state laws, and providing customer service while simultaneously working full-time at various projects.
+\item PSS provides pay-per-incident support for experts and businesses. More often than not, many of these support cases with their symptoms, root causes and resolutions, will land as a white paper in the external VKB (Microsoft partners) or TechNet. I did the root cause \& resolution parts.
 \end{itemize}}
 
 \section{Technical Skills}
 \begin{cvcolumns}
-  \cvcolumn{}{\begin{itemize}\item Azure, Windows\item AD\item Python\item PowerShell\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item VDI, RDS\item JavaScript\item Xperf\item WinDbg\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Failover Cluster\item Linux\item Solaris\item Scripting (bash)\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Git/Subversion\item HTML5, CSS\item LaTeX, MD\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Azure IaaS\item Windows Server\item ADFS, PKI \item DaaS, VDI, RDS\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Hyper-V\item JavaScript\item Xperf\item WinDbg\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Failover Cluster\item Debian Linux\item Solaris\item Scripting (bash)\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Git/Subversion\item HTML5, CSS\item LaTeX, MD\item PoSh, Python\end{itemize}}
 \end{cvcolumns}
 
 \section{Courses}
 \cvdoubleitem{}{[70-660] Windows Internals for EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}{Workshop: Mandel: Presentation Skills for Technical Professionals}
 \cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Accelerated Windows Memory Dump Analysis}
 
-%\section{Cerifications}
-%\cvitem{2015}{Microsoft Specialist: Implementing Microsoft Azure Infrastructure Solutions}{}
-%\cvitem{2015}{Microsoft Certified Professional - 956111}{}
-%\cvitem{2010}{ITIL V3 Foundation}{}
+\section{Certifications (excluding legacy titles)}
+\cvitem{2015}{Microsoft Specialist: Implementing Microsoft Azure Infrastructure Solutions}{}
+\cvitem{2015}{Microsoft Certiﬁed Professional}{}
+\cvitem{2008}{ITIL V3 Foundation}{}
 
 \section{Accreditations}
-\cvitem{2016}{Windows Server 2016 Failover Cluster WorkshopPLUS}{}
+\cvitem{2017}{Windows Server 2016 Failover Cluster WorkshopPLUS}{}
 \cvitem{2015}{Microsoft Azure Compute: Infrastructure as a Service (IaaS) Overview Workshop}{}
-\cvitem{2014}{Vital Signs Advanced: Performance Monitoring Windows Server Workshop}{}
+\cvitem{2014}{Vital Signs: Performance Monitoring Windows Server WorkshopPLUS}{}
 
 \section{Projects}
 \cvitem{2016}{Microsoft Garage Hackathon: Bing my ASL (C++, Java, UI \& Web design)}{}
@@ -130,7 +125,6 @@ The bullet point description of my job?%
 \section{Volunteering Experience}
 \cvitem{2017--Present}{Freelance IT Consultant, Fondation Agir Contre l'Exclusion, France}{}
 \cvitem{2011--2017}{Animal Rescue Service, Dublin SPCA, Ireland}{}
-\cvitem{2011--2011}{Canine Carer, Dogs Trust, Ireland}{}
 
 %\section{References}
 %\begin{cvcolumns}
@@ -139,14 +133,14 @@ The bullet point description of my job?%
   %\cvcolumn[0.5]{All the rest \& some %more}{\textit{That} person, and \textbf{those} %also (all available upon request).}
 %\end{cvcolumns}
 
-% Publications from a BibTeX file without multibib package
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% publications from a BibTeX file without multibib package
+% for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+% to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 %\nocite{*}
 %\bibliographystyle{plain}
 %\bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
-% Publications from a BibTeX file with the multibib package
+% publications from a BibTeX file with the multibib package
 %\section{Publications}
 %\nocitebook{book1,book2}
 %\bibliographystylebook{plain}
