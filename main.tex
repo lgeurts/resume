@@ -1,6 +1,6 @@
 %% Start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%% Modified 2018 Luc Geurts aka /Luge (lgeurts@protonmail.com).
+%% Modified 2019 Luc Geurts aka /Luge (lgeurts@protonmail.com).
 %
 %% This work may be distributed and/or modified under the conditions of the LaTeX Project Public License version %% 1.3c, available at http://www.latex-project.org/lppl/.
 
@@ -29,7 +29,7 @@
 %\phone[fixed]{+1~(234~567~890}                     % optional, remove / comment the line if not wanted
 \email{lgeurts@protonmail.com}                                  
 \homepage{www.linkedin.com/in/lucgeurts}                        
-%\extrainfo{visit my blog at lgeurts.github.io}     % optional, remove / comment the line if not wanted
+\extrainfo{visit my blog at lgeurts.github.io}     % optional, remove / comment the line if not wanted
 \photo[74pt][0.2pt]{picture}                                   
 % '64pt' is the height the picture must be re-sized to, '0.4pt' is the thickness of the frame (set to '0pt' for no frame) and 'picture' is the name of the picture file
 %\quote{Somewhere, something incredible is waiting to be known.}
@@ -56,18 +56,22 @@
 %\cvitem{Place of Birth}{Bree, Belgium}
 
 \section{Education}
-\cventry{1987--1989}{3 Para - Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
-\cventry{1983--1987}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
-\cventry{1979--1983}{Associate Degree, Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
+%\cventry{1987--1989}{3 Para - Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
+%\cventry{1983--1987}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
+%\cventry{1979--1983}{Associate Degree, Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
+\cventry{}{3 Para - Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
+\cventry{}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
+\cventry{}{Associate Degree, Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
 
 \section{Experience}
-\cventry{2017--Present}{Team Lead, Cloud Platforms Engineer}{}{France}{}{\newline{}%
+\cventry{2017--Present}{Team Lead, Cloud Platforms Engineer}{Flouze EURL}{France}{}{\newline{}%
 \begin{itemize}%
 \item Freelance contractor at a medium sized travel company. I am helping them build/scale a functional service (Websites, APIs, mobile apps), migrate to AWS (Amazon VPC), implement software provisioning, and recruit a new team of engineers;
-\item Manage the migration of a financial apps cluster at Le Crédit Lyonnais (finished 06/18); 
+\item Manage the migration of a financial apps cluster at Le Crédit Lyonnais (finished 06/18);
+\item Design and automate migrations to Microsoft Azure. Currently at a global operating manufacturer of heavy lifting, drilling, mooring, and pipe laying equipment for offshore companies;
 \item Maintain a mixed Windows/Linux environment at a school for at-risk middle/high school children (FACE aka Fondation Agir Contre L'Exclusion);
 \item Coach \& Tech Advisor for two early stage startups;
-\item Recently became interested in AI; obtaining online certs from the Microsoft Professional program.
+\item Recently became interested in AI/ML \& Linux; obtaining certs from the Microsoft Professional and LPIC programs.
 \end{itemize}}
 \cventry{2012--2017}{Premier Field Engineer}{Microsoft Corporation}{Germany}{}{\newline{}%
 The bullet point description of my job?%
@@ -82,24 +86,20 @@ The bullet point description of my job?%
 \begin{itemize}%
 \item Managing Tier 3 escalations and subcases; addressing and resolving break-fix incidents for KACE, vRanger and Foglight end-to-end software.
 \end{itemize}}
-\cventry{2011--2011}{Support Escalation Engineer}{Hewlett-Packard for Microsoft PSS}{Ireland}{}{\newline{}%
-\begin{itemize}%
-\item PSS provides pay-per-incident support for experts and businesses. More often than not, many of these support cases with their symptoms, root causes and resolutions, will land as a white paper in the external VKB (Microsoft partners) or TechNet. I did the root cause \& resolution parts.
-\end{itemize}}
 
 \section{Technical Skills}
 \begin{cvcolumns}
   \cvcolumn{}{\begin{itemize}\item Azure IaaS\item Windows Server\item ADFS, PKI \item DaaS, VDI, RDS\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Hyper-V\item JavaScript\item Xperf\item WinDbg\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Failover Cluster\item Debian Linux\item Solaris\item Scripting (bash)\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Git/Subversion\item HTML5, CSS\item LaTeX, MD\item PoSh, Python\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Active Directory\item PowerShell\item Xperf\item WinDbg\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Git/Subversion\item Debian Linux\item Hyper-V\item Bash\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item Intune, DSC\item LaTeX, MD\item JS, Python\end{itemize}}
 \end{cvcolumns}
 
 \section{Courses}
 \cvdoubleitem{}{[70-660] Windows Internals for EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}{Workshop: Mandel: Presentation Skills for Technical Professionals}
 \cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Accelerated Windows Memory Dump Analysis}
 
-\section{Certifications (excluding legacy titles)}
+\section{Certifications (excluded legacy titles)}
 \cvitem{2015}{Microsoft Specialist: Implementing Microsoft Azure Infrastructure Solutions}{}
 \cvitem{2015}{Microsoft Certified Professional}{}
 \cvitem{2008}{ITIL V3 Foundation}{}
