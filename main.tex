@@ -1,6 +1,6 @@
 %% Start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%% Modified 2019 Luc Geurts aka /Luge (lgeurts@protonmail.com).
+%% Modified 2019 Luc Geurts aka Flous (lgeurts@protonmail.com).
 %
 %% This work may be distributed and/or modified under the conditions of the LaTeX Project Public License version %% 1.3c, available at http://www.latex-project.org/lppl/.
 
@@ -14,7 +14,6 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                          % if you are not using xelatex/lualatex, replace this by your own encoding
-%\usepackage{CJKutf8}                                % to use CJK for typesetting in 'Chinese', 'Japanese' or 'Korean'
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
@@ -23,13 +22,13 @@
 
 % personal data
 \name{Luc}{Geurts}
-\title{wandering, learning ... chronic curiosity syndrome}                   
+\title{always wandering, learning ... chronic curiosity syndrome}                   
 \address{}{45000 Orléans}{Centre-Val de Loire, France}          
 %\phone[mobile]{+49~(151)~44063413}                 % optional, remove / comment the line if not wanted
 %\phone[fixed]{+1~(234~567~890}                     % optional, remove / comment the line if not wanted
 \email{lgeurts@protonmail.com}                                  
 \homepage{www.linkedin.com/in/lucgeurts}                        
-\extrainfo{visit my blog at lgeurts.github.io}     % optional, remove / comment the line if not wanted
+\extrainfo{visit my blog at lgeurts.github.io}      % optional, remove / comment the line if not wanted
 \photo[74pt][0.2pt]{picture}                                   
 % '64pt' is the height the picture must be re-sized to, '0.4pt' is the thickness of the frame (set to '0pt' for no frame) and 'picture' is the name of the picture file
 %\quote{Somewhere, something incredible is waiting to be known.}
@@ -46,29 +45,25 @@
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
+% set colors for sections (everything from this line to 53 is experimental) 
+%\usepackage{titlesec}
+%\titleformat{\section}
+%{\color{gray}\normalfont\Large\bfseries}
+%{\color{gray}\thesection}{1em}{}
+
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                                        % to typeset your resume in Chinese using CJK
+
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-%\section{Personal Data}
-%\cvitem{Name}{Luc H.A.M. Geurts}
-%\cvitem{Place of Birth}{Bree, Belgium}
+I'm a Belgian/Irish expat who lives in France \& the Netherlands. My past includes various roles ranging from Microsoft PFE, Escalation Engineer, Consultant, to Project Lead and CEO. 15+ years experience in managing projects, troubleshooting core Windows issues, backend development, and infrastructure automation. Currently managing my new company, working as Lead Engineer for a Dutch MSP, and interim Tech Lead at a French travel agency. A super nerd who loves Cloud, Linux, and who's interested in far too much topics ranging from science to history, astronomy, kendo, trekking the alps, my (2008) GSXR 600, rehearsing paradiddles, and more.
 
-\section{Education}
-%\cventry{1987--1989}{3 Para, Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
-%\cventry{1983--1987}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
-%\cventry{1979--1983}{Associate Degree Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
-\cventry{}{3 Para, Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
-\cventry{}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
-\cventry{}{Associate Degree Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
-
-\section{Experience}
+\section{Professional Experience}
 \cventry{2017--Present}{Team Lead, Cloud Platforms Engineer}{Flouze EURL}{France}{}{\newline{}%
 \begin{itemize}%
-\item Interim Tech Lead at a leading travel and tourism company. Having finished the migration to AWS, my team of 6 devs is currently occupied with maintaining a range of functional services (websites, APIs, mobile apps), and configuring servers through RedHat Ansible Tower.
+\item Interim Tech Lead at a leading travel and tourism company. Having finished the migration to AWS, my team of 6 devs is occupied with maintaining functional services (websites, APIs, mobile apps), and configuring servers through RedHat Ansible Tower.
 \linebreak As of May 2021, we also started with building additional AI driven real-time contact center agents. Some tools of choice are Amazon Transcribe, Comprehend, Translate, and Kendra;
-\item Introduce GitHub repository workflows in combination with Azure Boards, upgrade on-premises services to the latest level, design \& implement business process automation at one of the world's 3 largest manufacturers of heavy lifting, drilling, mooring, and pipe laying equipment for offshore companies;
+\item Introduce GitHub repository workflows in combination with Azure Boards, upgrade on-premises services to the latest level, design \& implement business process automation at Huisman Equipment, one of the world's 3 largest manufacturers of heavy lifting, drilling, mooring, and pipe laying equipment for offshore companies;
 \item Maintain a predominantly Microsoft \& Apple based infrastructure at a school for at-risk children. This is a voluntary job (FACE aka Fondation Agir Contre l'Exclusion);
 \item Coach \& Tech Advisor for two startups (remote workspaces and financial modeling);
 \item Updating certifications. Obtaining PMP, AWS, and ML, whenever I find some time.
@@ -87,31 +82,29 @@ The bullet point description of my job?%
 \item Managing Tier 3 escalations and subcases; addressing and resolving break-fix incidents for KACE, vRanger and Foglight end-to-end software.
 \end{itemize}}
 
-\section{Technical Skills}
+\section{Skills}
 \begin{cvcolumns}
-  \cvcolumn{}{\begin{itemize}\item AWS, Azure\item Active Directory\item DaaS, VDI, RDS\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item ADFS, PKI\item WinDbg, Xperf\item Hyper-V, KVM\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item ML -Scikit-Learn\item Git/Subversion\item PowerShell, Bash\end{itemize}}
-  \cvcolumn{}{\begin{itemize}\item Ansible, Docker\item Intune, DSC\item LaTeX, MD\end{itemize}}
+ \cvcolumn{Providers}{\begin{itemize}\item AWS, Azure\item On-premises AD\item Hyper-V\end{itemize}}
+ \cvcolumn{Automation}{\begin{itemize}\item Ansible (Tower)\item Docker, Jenkins\item GitOps\end{itemize}}
+ \cvcolumn{Languages}{\begin{itemize}\item Bash, PowerShell\item Git/Subversion\item LaTeX, YAML\end{itemize}}
+ \cvcolumn{Other}{\begin{itemize}\item WinDg, Xperf\item DaaS, RDS\item Intune, DSC\end{itemize}}
 \end{cvcolumns}
 
-\section{Courses}
-\cvdoubleitem{}{[70-660] Windows Internals for EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}{Getting Started with PowerShell Desired State Configuration (DSC)}
-\cvdoubleitem{}{Crucial Conversations: Tools for Talking When Stakes are High}{}{Workshop: Mandel: Presentation Skills for Technical Professionals}
-\cvdoubleitem{}{Ansible: Setup, Configure, and Ad Hoc Commands Deep Dive}{}{Accelerated Windows Memory Dump Analysis}
+\section{Certifications}
+\cvitem{2020}{[AZ-900] Microsoft Azure Fundamentals}{}
+\cvitem{2019}{[010-160] Linux Professional Institute Linux Essentials}{}
+\cvitem{2015}{[70-533] Microsoft Specialist: Implementing Microsoft Azure Infrastructure Solutions}{}
 
-\section{Certifications (excluding retired exams)}
-\cvitem{2020}{Microsoft Azure Fundamentals}{}
-\cvitem{2019}{Linux Professional Institute Linux Essentials}{}
-\cvitem{2015}{Microsoft Specialist: Implementing Microsoft Azure Infrastructure Solutions}{}
-\cvitem{2015}{Microsoft Certified Professional}{}
+\section{Courses and Accreditations}
+\cvitem{2020}{DevOps Essentials on AWS}{}
+\cvitem{2017}{Trainer Windows Server Failover Cluster WorkshopPLUS}{}
+\cvitem{2015}{Trainer Microsoft Azure Compute: Infrastructure as a Service (IaaS) Workshop}{}
+\cvitem{2014}{Trainer Vital Signs: Performance Monitoring Windows Server WorkshopPLUS}{}
+\cvitem{2014}{Mandel: Presentation Skills for Technical Professionals}{}
+\cvitem{2013}{Crucial Conversations: Tools for Talking When Stakes are High}{}
+\cvitem{2012}{[70-660] Windows Internals for Microsoft EEs: Memory, The Registry, PnP, Networking, Storage, Security}{}
 
-\section{Accreditations}
-\cvitem{2017}{Windows Server 2016 Failover Cluster WorkshopPLUS}{}
-\cvitem{2015}{Microsoft Azure Compute: Infrastructure as a Service (IaaS) Overview Workshop}{}
-\cvitem{2014}{Vital Signs: Performance Monitoring Windows Server WorkshopPLUS}{}
-
-\section{Honors and Awards}
+\section{Honors \& Awards}
 \cvitem{2021}{AWS Community Builders program member}{}
 
 \section{Projects}
@@ -121,22 +114,26 @@ The bullet point description of my job?%
 \cvitem{2014}{Kernel Debugging for PFEs Workshop, Microsoft Premier Support, Germany}{}
 \cvitem{2013}{CSS Data Gathering Workshop, Microsoft Learning, USA}{}
 
+%\section{Education}
+%\cventry{1987--1989}{3 Para, Electromechanical Engineer}{}{Belgian Armed Forces (NATO), Belgium}{}{}
+%\cventry{1983--1987}{Bachelor of Arts - BA, Music}{}{}{Genkse Academie voor Kunst, Belgium}{}{}
+%\cventry{1979--1983}{Associate Degree Biotechnology}{}{}{Biotechnicum Bocholt, Belgium}{}{}
+
 \section{Foreign Languages}
 \cvitem{Flemish}{Native proficiency}{}
 \cvitem{English}{CEFR C2: 20+ years experience working with English-speaking clients}{}
 \cvitem{French}{DELF B2: 4 years at high school in Belgium, 1 year CIEP in France}{}
 \cvitem{German}{CEFR B2: Expat living for 5 years in Germany}{}
 
-\section{Volunteering Experience}
-\cvitem{2017--Present}{Freelance IT Consultant, Fondation Agir Contre l'Exclusion, France}{}
-\cvitem{2011--2017}{Animal Rescue Service, Dublin SPCA, Ireland}{}
-
 %\section{References}
 %\begin{cvcolumns}
-  %\cvcolumn{Category 1}{\begin{itemize}\item %Person 1\item Person 2\item Person %3\end{itemize}}
-  %\cvcolumn{Category 2}{Amongst %others:\begin{itemize}\item Person 1, and\item %Person 2\end{itemize}(more upon request)}
-  %\cvcolumn[0.5]{All the rest \& some %more}{\textit{That} person, and \textbf{those} %also (all available upon request).}
+ %\cvcolumn{Category 1}{\begin{itemize}\item %Person 1\item Person 2\item Person %3\end{itemize}}
+ %\cvcolumn{Category 2}{Amongst %others:\begin{itemize}\item Person 1, and\item %Person 2\end{itemize}(more upon request)}
+ %\cvcolumn[0.5]{All the rest \& some %more}{\textit{That} person, and \textbf{those} %also (all available upon request).}
 %\end{cvcolumns}
+
+\section{Extracurricular Activities}
+\cvitem{2017--Present}{IT Consultant, Fondation Agir Contre l'Exclusion, France}{}
 
 % publications from a BibTeX file without multibib package
 % for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
