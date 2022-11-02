@@ -1,0 +1,46 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/lgeurts/resume/awesome-cv
+%
+% Author:
+% Luc Geurts (Flous)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\name{Luc}{Geurts}
+\tagline{Engineering Consultant | Lead Project Engineer}
+\photo{2.5cm}{flous}
+\socialinfo{
+	\linkedin{lucgeurts}
+	\github{lgeurts}\\
+	\smartphone{+31 6 1542 3001}
+	\email{lgeurts@proton.me}\\
+	\address{45000 Orléans, Centre-Val de Loire, France}\\
+%	\infos{Né le XX novembre 19XX (XX ans) à Nouméa, Nouvelle-Calédonie}
+	\infos{Belgian Citizen}
+}
+
+\begin{document}
+
+	\makecvheader
+
+	\makecvfooter
+		{\textsc{\today}} % \selectlanguage{english}\today
+		{\textsc{Luc Geurts - Professional CV}}
+		{\thepage}
+
+	\input{section_headline}
+	\input{section_competencies}			% Section compétences
+	\input{section_experience_short}		% Section expérience
+	\input{section_projects}                % Section projets
+	\input{section_languages}				% Section langues
+	\input{section_scolarships}				% Section scholarité
+	\input{section_publications}            % Section publications
+%   \input{section_interests}				% Section intérêts
+	\input{section_references} 				% Section références
+
+\end{document}
