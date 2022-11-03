@@ -452,7 +452,7 @@
       \multicolumn{2}{l}{\textbf{#1}}\\
       \multicolumn{2}{l}{\emph{#2}, \textsc{#3}}\\
       \quad \mailSymbol & \href{mailto:#4}{#4} \\  
-%     \quad \faPhone & #5 \\
+      \quad \faPhone & #5 \\
     \end{tabular}
   \end{minipage}%
 }
